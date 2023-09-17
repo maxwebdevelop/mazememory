@@ -1,0 +1,130 @@
+/* ANIMATIONS */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* ANIMATIONS */
+@keyframes fadeInUp2 {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.fade-out-element {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+body {
+    width: 100%;
+    overflow-x: none;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.welcomeMessage {
+    opacity: 0;
+    animation: fadeInUp 1.5s forwards 0.5s;
+    color: #555;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.welcomeMessage h1{
+    font-size: 50px;
+}
+
+#loading{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #555;
+    font-size: 20px;
+    display: none;
+}
+
+.enterName{
+    opacity: 0;
+    animation: fadeInUp2 1.5s forwards 0.5s;
+    width: 100%;
+    overflow-x: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #555
+}
+
+#enterNameForm{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pleaseEnterText{
+    font-size: 25px;
+    margin-right: 1.5%;
+}
+
+.inputForName{ 
+    width: 25%;
+    height: 20px;
+    margin-top: 1.5%;
+    border: none;
+    border-bottom: 1px solid #333;
+    margin-bottom: 1px;
+    font-size: 25px;
+    color: #555;
+    font-weight: bold;
+    padding: 5px;
+    margin-right: 1.5%;
+    text-align: center;
+}
+
+.inputForName:focus {
+    outline: none;
+    border-bottom: 1px solid #333;
+    box-shadow: none;
+}
+
+button {
+    padding: 0;
+    width: 10%;
+    color: #fff;
+    border: none;
+    background-color: #555;
+    font-weight: bold;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Memory Maze</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <section class="welcomeMessage" id="gameWelcome">
+      <div>
+        <h1>Welcome to Memory Maze</h1>
+      </div>
+    </section>
+    <section id="loading">
+      <h6>Saving... please be patient</h6>
+    </section>
+    <section class="enterName" id="EnterName">
+      <div id="enterNameForm">
+          <h3 class="pleaseEnterText">Please enter your name:</h3>
+          <input type="text" class="inputForName" id="playerName">
+          <button onclick="startGame()">Start Game</button>
+      </div>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+    <script src="firebase.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

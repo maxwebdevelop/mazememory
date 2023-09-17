@@ -1,0 +1,125 @@
+body{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#timer{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+#yourbadscore{
+    margin-top: 1%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.maze {
+    margin:1%, 5%;
+    display: grid;
+    grid-template-columns: repeat(10, 30px); 
+    grid-template-rows: repeat(11, 30px);
+    gap: 1px;
+    border: 2px solid #000;
+  }
+  
+  .invisible-wall {
+    opacity: 0 !important;
+  }
+.wall {
+    background-color: black;
+}
+
+.path, .start, .end, .avatar {
+    background-color: white;
+}
+
+.start {
+    background-color: green;
+}
+
+.end {
+    background-color: red;
+}
+
+.avatar {
+    background-color: blue;
+}
+  
+  
+#start-button {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    padding: 20px 40px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.avatar {
+    background-color: #0000ff; 
+    border-radius: 50%; 
+  }
+  
+/* 
+button{
+    background-color: #000;
+    color: white;
+    padding: 20px 20px;
+  } */
+
+.Movementbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; 
+    width: 200px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    position: absolute;
+}
+
+#move-up {
+    top: 0;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #000;
+    color: white;
+}
+
+#move-down {
+    bottom: 0;
+    padding: 15px;
+    font-size: 20px;
+
+    background-color: #000;
+    color: white;
+}
+
+#move-left {
+    left: 0;
+    padding: 15px;
+    font-size: 20px;
+
+    background-color: #000;
+    color: white;
+}
+
+#move-right {
+    right: 0;
+    padding: 15px;
+    font-size: 20px;
+
+    background-color: #000;
+    color: white;
+}

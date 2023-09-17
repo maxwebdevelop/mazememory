@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Memory Maze</title>
+    <link rel="stylesheet" type="text/css" href="game.css">
+  </head>
+  <body>
+    
+<!-- index.html -->
+    <div id="timer"></div>
+
+    <div class="maze" id="mazeMap">
+        <div class="player-avatar" id="avatarPerson"></div>
+    </div>
+
+    <!-- Add these buttons inside your <body> element -->
+        <div class="Movementbuttons">
+            <button id="move-up">UP</button>
+            <button id="move-down">DOWN</button>
+            <button id="move-left">LEFT</button>
+            <button id="move-right">RIGHT</button>
+        </div>
+
+
+    <button id="start-button">Start Game</button>
+
+    <div>
+        <h5 id="yourbadscore"></h5>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+    <script src="firebase.js"></script>
+    <script src="maze2.js"></script>
+    <script src="maze.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
